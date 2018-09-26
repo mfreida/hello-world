@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A SIMPLE FORM THAT TAKES A USERS NAME :P</title>
+        <script src="https://cdn.jsdelivr.net/npm/@surix/client-service@0.1.6/dist/client-service.js"></script>
+       
+    </head>
+
+    <body>
+        <h1>This Is Where It All Begins...With your name of course</h1>
+        <form method="post" action="/addname">
+            <label>Please enetr your First and Last name respectively</label><br>
+            <input type="text" name="firstName" placeholder="Enter first name..." required>
+            <input type="text" name="lastName" placeholder="Enter last name..." required>
+            <input type="submit" value="Add Name">
+        </form>
+
+        <script >
+        const service = Surix.Service.init();
+        const requests = Surix.requests;
+        console.log(requests);
+        </script>
+        
+        <script src="toast.js"></script>
+
+        <script> 
+        const message = 'Welcome to Surix';
+        
+        service.request(requests.toast.show, message).then(res => {
+            //Toast was displayed successfully 
+        }).catch(err => {
+            // Handle error
+            });
+        </script>
+
+        <script > 
+        const entity = {
+            data: {
+                first_name: {
+                    type: "text",
+                    label: "First Name",
+                    value: "Freida"
+                },
+
+                surname: {
+                    type: "text",
+                    label: "Surname",
+                    value: "Mati"
+                }
+
+                
+            }
+        };
+        service.request(requests.data.createEntity, entity).then(result => {
+            console.log("Entity created!", result)
+        }).catch(err => {
+            console.error ("An error has occured", error)
+    
+        });
+
+        </script>
+        
+        <script>
+            service.request(requests.data.createEntity, entityDetails).then(createdEntity => {
+            console.log('Got entity: ', createdEntity)
+        }).catch(err => {
+            console.error('There is an error', error);
+         });
+        </script>
+
+    </body>
+</html>

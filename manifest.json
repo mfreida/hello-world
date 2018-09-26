@@ -1,0 +1,9 @@
+{
+    "name": "User-Detail",
+    "baseUrl": "http://localhost:3000/",
+    "description": "Enter user details",
+    "tile": {
+        "iconUrl": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn3.iconfinder.com%2Fdata%2Ficons%2Fschool-solid-icons-vol-1%2F96%2F003-512.png&imgrefurl=https%3A%2F%2Fwww.iconfinder.com%2Ficons%2F424014%2Fbook_exercise_book_notebook_open_book_record_record_book_volume_icon&docid=wexpaki7PfXcyM&tbnid=zJO0-xZ05AKLHM%3A&vet=10ahUKEwjm6vyFydPdAhVLqYsKHVflAVAQMwiHASgBMAE..i&w=512&h=512&bih=616&biw=681&q=book%20icon&ved=0ahUKEwjm6vyFydPdAhVLqYsKHVflAVAQMwiHASgBMAE&iact=mrc&uact=8"
+    },
+    "serverUrl": ""
+}
